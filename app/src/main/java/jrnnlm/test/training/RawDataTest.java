@@ -16,6 +16,7 @@ public class RawDataTest {
         conf.maxIters = 10;
         conf.bpttBlock = 2;
         conf.trainData = new int[]{1, 2, 3, 0};
+        conf.validData = new int[]{1, 2, 3, 0};
         RNNLM lm = new RNNLM(conf);
 
         Arrays.fill(lm.inputSynapse.weights.getData(), 0.1);
